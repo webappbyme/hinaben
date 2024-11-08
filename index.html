@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinaben | Fitness Center Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#calculator">Calorie Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="scroll-effect fade-in">
+        <div class="content">
+            <h1 class="animate-text"><b><i>Welcome to FitLife Gym</i></b></i></h1>
+            <p>Your fitness journey starts here!</p>
+            <img src="gymequipment.jpg" alt="Gym Equipment" class="home-image">
+        </div>
+    </section>
+
+    <section id="about" class="scroll-effect slide-in">
+        <h2><i>About Us</i></h2>
+        <p><em>FitLife Gym</em> is a premier fitness center that caters to individuals of all fitness levels. <br>
+            We offer a variety of workout programs, state-of-the-art equipment, and a team of professional trainers to help you reach your fitness goals. <br>
+            Our mission is to provide a supportive and motivating environment where everyone can feel empowered to achieve their best self. <br>
+            Whether you’re a beginner or a fitness enthusiast, FitLife Gym is here to guide you every step of the way.</p>
+        <div class="about-images">
+            <img src="aboutgym2.jpg" alt="Training Session" class="about-image">
+            <img src="aboutgym.jpg" alt="FitLife Gym Interior" class="about-image">
+            <img src="aboutgym2.jpg" alt="Training Session" class="about-image">
+            <img src="aboutgym.jpg" alt="Training Session" class="about-image">
+            <img src="aboutgym5.jpg" alt="Training Session" class="about-image">
+            <img src="aboutgym1.jpg" alt="Training Session" class="about-image">
+            <img src="aboutgym2.jpg" alt="Training Session" class="about-image">
+            <img src="aboutgym3.jpg" alt="Training Session" class="about-image">
+            <img src="aboutgym4.jpg" alt="Training Session" class="about-image">
+        </div>
+    </section>
+
+    <section id="calculator" class="scroll-effect slide-up boxed">
+        <h2><i>Calorie Burn Calculator</i></h2>
+        <form id="calorie-form">
+            <label for="intensity">Workout Intensity:</label>
+            <select id="intensity">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" min="10" max="120">
+
+            <button type="button" onclick="calculateCalories()">Calculate</button>
+        </form>
+        <p id="calorie-result"></p>
+    </section>
+<br>
+<br>
+
+    <section id="contact" class="scroll-effect slide-up boxed">
+        <h2><i>Contact Us</i></h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+<br>
+<br>
+    <footer>
+        <p>&copy; 2024 Hinaben | FitLife Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>
